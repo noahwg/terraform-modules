@@ -4,9 +4,9 @@ variable "name" {
 }
 
 variable "versioning_enabled" {
-  description = "Whether to enable object versioning."
+  description = "Whether to manage object versioning. Set to true to enable, false to suspend, or null to leave versioning unmanaged."
   type        = bool
-  default     = false
+  default     = null
 }
 
 variable "encryption_enabled" {

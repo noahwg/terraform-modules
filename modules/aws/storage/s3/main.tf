@@ -17,6 +17,8 @@ resource "aws_s3_bucket" "this" {
 }
 
 resource "aws_s3_bucket_versioning" "this" {
+  count = var.versioning_enabled == null ? 0 : 1
+
   bucket = aws_s3_bucket.this.id
 
   versioning_configuration {

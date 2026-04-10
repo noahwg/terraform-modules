@@ -46,7 +46,7 @@ No modules.
 | <a name="input_name"></a> [name](#input\_name) | Name of the S3 bucket. | `string` | n/a | yes |
 | <a name="input_sse_algorithm"></a> [sse\_algorithm](#input\_sse\_algorithm) | Server-side encryption algorithm to use by default. | `string` | `"AES256"` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to all resources. | `map(string)` | `{}` | no |
-| <a name="input_versioning_enabled"></a> [versioning\_enabled](#input\_versioning\_enabled) | Whether to enable object versioning. | `bool` | `false` | no |
+| <a name="input_versioning_enabled"></a> [versioning\_enabled](#input\_versioning\_enabled) | Whether to manage object versioning. Set to true to enable, false to suspend, or null to leave versioning unmanaged. | `bool` | `null` | no |
 | <a name="input_website_enabled"></a> [website\_enabled](#input\_website\_enabled) | Whether to enable static website hosting for the bucket. | `bool` | `false` | no |
 | <a name="input_website_index_document"></a> [website\_index\_document](#input\_website\_index\_document) | Index document suffix for static website hosting. | `string` | `"index.html"` | no |
 

@@ -6,7 +6,6 @@ module "example_bucket" {
   source = "../../../../modules/aws/storage/s3"
 
   name                   = "my-example-bucket"
-  versioning_enabled     = true
   encryption_enabled     = true
   sse_algorithm          = "AES256"
   bucket_key_enabled     = false
